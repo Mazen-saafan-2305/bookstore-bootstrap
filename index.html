@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="#"><img src="./photos/logo.png" alt=""></a>
+        <a class="navbar-brand store_title" href="#">Bookstore</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Front-end</a></li>
+                <li><a class="dropdown-item" href="#">Back-end</a></li>
+                <li><a class="dropdown-item" href="#">Full-stack</a></li>
+                <li><a class="dropdown-item" href="#">Disktop Apps</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Another</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Checkout</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary text-light sub_btn me-3" type="submit">Search</button>
+          </form>
+          <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-primary text-light sign_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
+        </div>
+        
+      </div>
+    </nav>
+    
+        <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Sign in form</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">be sure that email is alredy working</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <div id="emailHelp" class="form-text">12 characterat least</div>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Regestire</button>
+            <button type="button" class="btn btn-primary">Sign in</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide slider">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./photos/bookstore1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block caption1">
+            <h5>First location</h5>
+            <p>Alex Library.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./photos/bookstore2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block caption2">
+            <h5>Second location</h5>
+            <p>Cairo Library.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./photos/bookstore3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block caption3">
+            <h5>Third location</h5>
+            <p>Minya Library.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev bg-dark w-5" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next bg-dark w-5" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div class="container-fluid bg-dark text-light" style="padding: 30px;">
+      <h2>Title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatibus maxime necessitatibus autem magni quam accusamus velit laudantium nulla alias ducimus facilis neque reprehenderit sunt, inventore reiciendis non fugit perspiciatis.</p>
+      <button type="button" class="btn btn-primary">Learn more</button>
+    </div>
+
+    <div class="container-fluid bg-dark text-light" style="height: 100px; padding: 30px;margin-top: 30px; text-align: center;">
+      <h2>Popular Libraries</h2>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-top: 5px;">
+      <div class="accordion-item text-light" style="background-color: #666769;" >
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Alex Library.
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit fugiat sit autem inventore quam, harum facere labore neque dignissimos possimus optio pariatur aliquam, minus repellendus, corrupti accusamus enim dolore doloribus.</div>
+        </div>
+      </div>
+      <div class="accordion-item text-light"style="background-color: #666769;" >
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Cairo Library.
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nisi! Eos accusantium, culpa consequatur veniam veritatis molestias blanditiis enim iusto! Id aspernatur unde et ad, nostrum nam eligendi quidem commodi?</div>
+        </div>
+      </div>
+      <div class="accordion-item text-light" style="background-color: #666769;">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Minya Library.
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repellat, laborum repellendus, aperiam nemo voluptatum adipisci amet rerum perspiciatis velit sapiente facilis excepturi aspernatur, molestias deserunt? Perferendis dolorem aperiam ducimus?</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card bg-dark text-light" style="margin-top: 20px;">
+      <h5 class="card-header">Alex Library</h5>
+      <div class="card-body">
+        <h5 class="card-title">Location of library</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis accusamus eaque similique id! Quod ipsa iusto cum similique! Exercitationem ea est voluptas doloribus praesentium esse in culpa deleniti, cum debitis.</p>
+        <a href="https://maps.app.goo.gl/5DktNegkh4fLJuAn9" target="_blank" class="btn btn-primary">learn more</a>
+      </div>
+    </div>
+
+    <div class="card bg-dark text-light" style="margin-top: 10px;">
+      <h5 class="card-header">Cairo Library</h5>
+      <div class="card-body">
+        <h5 class="card-title">Location of library</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis accusamus eaque similique id! Quod ipsa iusto cum similique! Exercitationem ea est voluptas doloribus praesentium esse in culpa deleniti, cum debitis.</p>
+        <a href="https://maps.app.goo.gl/rVNCmxsf2YTAHASe7" target="_blank" class="btn btn-primary">learn more</a>
+      </div>
+    </div>
+
+    <div class="card bg-dark text-light" style="margin-top: 10px;">
+      <h5 class="card-header">Minya Library</h5>
+      <div class="card-body">
+        <h5 class="card-title">Location of library</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis accusamus eaque similique id! Quod ipsa iusto cum similique! Exercitationem ea est voluptas doloribus praesentium esse in culpa deleniti, cum debitis.</p>
+        <a href="https://maps.app.goo.gl/5RVbiZnMqYBUgcxX6" target="_blank" class="btn btn-primary">learn more</a>
+      </div>
+    </div>
+
+
+    <div class="container-fluid break mt-5 ">
+
+    </div>
+
+    <!-- T       R         E      N       D        Y          B       O          O       K     S -->
+
+    <div class="container-fluid trend text-light  mt-5">
+      <h2>Trendy Books</h2>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row gy-3">
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-dark text-light mx-auto" style="width: 18rem;">
+            <img src="./photos/product1.jpg" class="card-img-top" alt="..."style="height:300px">
+            <div class="card-body">
+              <h5 class="card-title">HTML Book</h5>
+              <p class="card-text">100 EGP</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-dark text-light mx-auto" style="width: 18rem;">
+            <img src="./photos/product2.jpg" class="card-img-top" alt="..."style="height:300px">
+            <div class="card-body">
+              <h5 class="card-title">CSS Book</h5>
+              <p class="card-text">150 EGP</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-dark text-light mx-auto" style="width: 18rem;">
+            <img src="./photos/product3.jpg" class="card-img-top" alt="..."style="height:300px">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript Book</h5>
+              <p class="card-text">200 EGP</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card bg-dark text-light mx-auto" style="width: 18rem;">
+          <img src="./photos/product4.jpg" class="card-img-top" alt="..."style="height:300px">
+          <div class="card-body">
+            <h5 class="card-title">C Programming Book</h5>
+            <p class="card-text">250 EGP</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card bg-dark text-light mx-auto" style="width: 18rem;">
+          <img src="./photos/product5.jpg" class="card-img-top" alt="..."style="height:300px">
+          <div class="card-body">
+            <h5 class="card-title">C++ Programming Book</h5>
+            <p class="card-text">300 EGP</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card bg-dark text-light mx-auto" style="width: 18rem;">
+          <img src="./photos/product6.jpg" class="card-img-top" alt="..."style="height:300px">
+          <div class="card-body">
+            <h5 class="card-title">C# Programming Book</h5>
+            <p class="card-text">350 EGP</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="card bg-dark text-light mx-auto" style="width: 18rem;">
+          <img src="./photos/product7.jpg" class="card-img-top" alt="..."style="height:300px">
+          <div class="card-body">
+            <h5 class="card-title">SQL DataBase Book</h5>
+            <p class="card-text">400 EGP</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card bg-dark text-light mx-auto" style="width: 18rem;">
+          <img src="./photos/product8.jpg" class="card-img-top" alt="..."style="height:300px">
+          <div class="card-body">
+            <h5 class="card-title">My SQL DataBase Book</h5>
+            <p class="card-text">450 EGP</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- B       R         E        A         K              -->
+
+    <div class="container-fluid break mt-5 ">
+
+    </div>
+
+    <!-- TEAM AREA                    -->
+    <div class="container-fluid trend text-light  mt-5">
+      <h2>Developers team</h2>
+    </div>
+
+    <div class="team-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="single-team">
+              <div class="img-area">
+                <img src="https://i.postimg.cc/qRjsQy6r/1.jpg" class="img-responsive" alt="">
+                <div class="social">
+                  <ul class="list-group list-group-horizontal">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="img-text">
+                <h4>John Doe</h4>
+                <h5>Front-End Developer</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="single-team">
+              <div class="img-area">
+                <img src="https://i.postimg.cc/wMMhrMDm/2.jpg" class="img-responsive" alt="">
+                <div class="social">
+                  <ul class="list-group list-group-horizontal">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="img-text">
+                <h4>Dave Wood</h4>
+                <h5>Back-End Developer</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="single-team">
+              <div class="img-area">
+                <img src="https://i.postimg.cc/PqMYrY4D/3.jpg" class="img-responsive" alt="">
+                <div class="social">
+                  <ul class="list-group list-group-horizontal">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="img-text">
+                <h4>Claire Chedd</h4>
+                <h5>Back-End Developer</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- B       R         E        A         K              -->
+
+    <div class="container-fluid break" style="margin-top: 10px;">
+
+    </div>
+
+
+    <!-- P     R     O     D      U       C       T      C     A     R     D    S -->
+
+    <div class="container-fluid trend text-light  mt-5">
+      <h2>New Products</h2>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+          <div class="card mt-5 bg-dark text-light">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./photos/product1.jpg" class="img-fluid w-100 rounded-start" alt="..." style="height: 320px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">HTML Book </h5>
+                  <p class="card-text" style="margin-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium omnis iste minima, earum laboriosam nobis illum iusto soluta. Pariatur error consequatur qui, quaerat similique autem ab inventore ipsum vel quae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, ipsam accusantium. Odio, reiciendis distinctio deserunt soluta qui sint nemo odit sit dolor neque explicabo quod asperiores temporibus excepturi recusandae animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, officiis maiores! Quaerat eligendi inventore corporis aperiam blanditiis architecto aliquid nihil quidem pariatur assumenda laboriosam amet recusandae quisquam neque, voluptatem sunt!</p>
+                  <p class="card-text"><small class="text-muted" style="margin-top: 10px;">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12">
+
+          <div class="card mt-5 bg-dark text-light">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./photos/product2.jpg" class="img-fluid w-100 rounded-start" alt="..." style="height: 320px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">CSS Book </h5>
+                  <p class="card-text" style="margin-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium omnis iste minima, earum laboriosam nobis illum iusto soluta. Pariatur error consequatur qui, quaerat similique autem ab inventore ipsum vel quae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, ipsam accusantium. Odio, reiciendis distinctio deserunt soluta qui sint nemo odit sit dolor neque explicabo quod asperiores temporibus excepturi recusandae animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, officiis maiores! Quaerat eligendi inventore corporis aperiam blanditiis architecto aliquid nihil quidem pariatur assumenda laboriosam amet recusandae quisquam neque, voluptatem sunt!</p>
+                  <p class="card-text"><small class="text-muted" style="margin-top: 10px;">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12">
+
+          <div class="card mt-5 bg-dark text-light">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./photos/product3.jpg" class="img-fluid w-100 rounded-start" alt="..." style="height: 320px;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">JAVA SCRIPT Book </h5>
+                  <p class="card-text" style="margin-top: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium omnis iste minima, earum laboriosam nobis illum iusto soluta. Pariatur error consequatur qui, quaerat similique autem ab inventore ipsum vel quae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, ipsam accusantium. Odio, reiciendis distinctio deserunt soluta qui sint nemo odit sit dolor neque explicabo quod asperiores temporibus excepturi recusandae animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, officiis maiores! Quaerat eligendi inventore corporis aperiam blanditiis architecto aliquid nihil quidem pariatur assumenda laboriosam amet recusandae quisquam neque, voluptatem sunt!</p>
+                  <p class="card-text"><small class="text-muted" style="margin-top: 10px;">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- F     o      o        t         e           r            -->
+
+    <!-- <div class="container-fluid footer mt-5">
+
+      <div class="footerContainer">
+        <div class="Socialicons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+  
+        <div class="footernav">
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <li><a href="">OUR TEAM</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footerbottom">
+        <p>Copyrights &copy; 2023, Designed by <span class="Designer">Mazen Saafan</span></p>
+      </div>
+    </div> -->
+
+
+    <div class="container-fluid footer mt-5">
+      <div class="footerContainer">
+          <div class="Socialicons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+  
+          <div class="footernav">
+              <ul class="nav">
+                  <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">NEWS</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">OUR TEAM</a></li>
+              </ul>
+          </div>
+      </div>
+  
+      <div class="footerbottom">
+          <p>Copyrights &copy; 2023, Designed by <span class="Designer">Mazen Saafan</span></p>
+      </div>
+  </div>
+
+    
+
+
+
+  
+
+
+
+   <script src="./js/bootstrap.min.js"></script>
+   <script src="./js/script.js"></script>
+  </body>
+</html>
